@@ -1,0 +1,14 @@
+
+@import "animations";
+@import "forms";
+@import "fudge";
+@import "layout";
+@import "lists";
+@import "media";
+@import "tables";
+@import "typography";
+@import "print";
+
+a[href], input[type='submit'], input[type='image'], label[for], select, button, {
+  cursor: pointer;
+}
