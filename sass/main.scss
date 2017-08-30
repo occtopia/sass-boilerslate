@@ -42,7 +42,7 @@ scss/
 |   `– _home.scss            # Home specific styles
 |
 |– themes/
-|   `– _theme.scss           # Default theme
+|   `– _default.scss         # Default theme
 |
 |– compatibility/
 |   `– ms/
@@ -55,3 +55,55 @@ scss/
 |
 `– main.scss                 # primary Sass file
 */
+
+
+// --------------------------------------------------------------------------
+// >> Vendor Styles
+// --------------------------------------------------------------------------
+@import 'vendor/normalize';
+
+
+// --------------------------------------------------------------------------
+// >> Abstracts
+// --------------------------------------------------------------------------
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/extend';
+@import 'abstracts/mixins';
+
+// --------------------------------------------------------------------------
+// >> Base Files
+// --------------------------------------------------------------------------
+@import 'base/base';
+
+
+// --------------------------------------------------------------------------
+// >> Components
+// --------------------------------------------------------------------------
+@import 'components/buttons.scss';
+@import 'components/navigation.scss';
+@import 'components/pagination.scss';
+
+
+// --------------------------------------------------------------------------
+// >> Partials
+// --------------------------------------------------------------------------
+@import 'partials/footer.scss';
+@import 'partials/header.scss';
+@import 'partials/sidebar.scss';
+
+
+// --------------------------------------------------------------------------
+// >> Themes
+// --------------------------------------------------------------------------
+@import 'themes/default.scss';
+
+
+// --------------------------------------------------------------------------
+// >> Compatibility
+// --------------------------------------------------------------------------
+@import 'compatibility/ms/ie10.scss';
+@import 'compatibility/ms/ie11.scss';
+@import 'compatibility/chrome.scss';
+@import 'compatibility/firefox.scss';
+@import 'compatibility/opera.scss';
